@@ -10,85 +10,13 @@ bibliography: references.bib
 
 Hensikten med denne rapporten er å presentere estimater for reliabilitet av data samlet i fysiologisk testlab ved Høgskolen i Innlandet. Vi har gjennomført VO2max tester på sykkel der 16 deltakere har gjennomført 2 eller 4 tester i løpet av tre uker. De to første testene ble gjennomført med ca. 24 timers mellomrom i uke en. De to siste testene ble gjennomført med ca. 48 timers mellomrom i uke tre. Vi har brukt Rstudio for å analysere dataen og få svar på om våre tester er reliable.
 
-## Protokoll
+## Standardisering før test
 
--       Forbrede plotteark (heime)
+Deltakerne ble instruert om å ikke trene dagen før test. Næringsinntaket, her også koffein og væske, de to siste måltidene skulle være likt før hver test. Deltakerne ble også bedt om å tilstrebe lik døgnrytme. Alle deltakerne hadde samme testtidspunkt hver testdag [@halperin2015].
 
--       Ta på labfrakk
+## Test protokoll for VO2max test
 
--       Skru på biosen, sjekk standardvæske
-
--       Åpne gass, sjekk at trippel v, står i vyntus, start kalibrering gass på vyntus, sett sammen munnstykke og gjøre klar slange (slange festes til munnstykke på sykkel og til miksekammeret) mens kalibrering pågår (bruk hansker og fest papir på med neseklypa).
-
--       Kalibrer volum
-
--       Sjekke krankarm på sykkel (172,5cm) og riktig pedaltype
-
--       Sette krankarmen rett opp og kalibrere sykkel
-
--       Logg på onedrive-skolekontoen, gjør klart plotteskjema
-
--       Finn frem laktatutstyr. Rør(+ekstra) teip og papir
-
--       Ta imot og måle vekta på utøver
-
--       Legg til info om ny person på vyntus: idr4000_h24_g3_test(x), vekt, høyde, kjønn, fødselsdato, eller bruke eksisterande bruker om det er registret frå før og endre vekta
-
--       Legg til info om ny person på lode-pcn: idr4000_h24_g3_test(x), vekt, høyde, kjønn, fødselsdato, eller bruke eksisterende bruker om det er registrert før
-
--       Stille sykkel så det ser bra ut og er behagelig for utøver
-
--       Gi litt watt til utøver for oppvarming (10-13 på borg skala i 5min)
-
--       Skru på vifte om deltaker ønsker
-
--       Gå inn på måling, sjekke at det står medium på munnstykke, 30sek målinger, pulsbeltet koblet til.
-
--       Informere om at testen kommer til å foregå trappetrinsvis ved økninger i watt per min (20w for damer og 25w for menn) og at målet skal vere å sykle til det ikkje går lenger, at det blir målinger hvert 30sek og at man skal sitte gjennom hele testen, og forklare borg skala
-
--       Gå fra check phase til test phase i vyntus
-
--       Starte testen ved å trykke på klokka og sykkel pc etter 1min er gått i vyntus
-
--       Informere om økninger og målinger underveis i testen
-
--       Motivere og pushe
-
--       Se på tid, watt og makspuls ved slutten av testen, spørre etter borg – notere ned i plotteark
-
--       Ta laktat 1 min etter utøver ga seg
-
--       Måle laktat i biosen og plotte inn i plotteark
-
--       Passe på at det går bra med utøver
-
--       Stoppe test i vyntus
-
--       Lagre data på sykkel-pc
-
--       Vaske rør, munnstykke og sykkel
-
--       Bruke vifta til å tørke miksekammeret
-
--       Plotte verdier fra vyntus
-
--       Lagre vyntusfil i minnepenn og over i onedrive på lab pc
-
--       Bytte fra minnepenn til bluetooth-kobleren til pulsbeltet
-
--       Lagre plotteskjema
-
--       Ta ut av cidex
-
--       Sette biosen i stand by om vi er siste igjen i labben
-
-**Standardisering mellom testene**
-
--       De to siste måltidene før test like
-
--       Lik trening dagene i forkant av testdag
-
--       Drikke like mye
+Test protokoll for VO2maks testingen forteller hvordan testene ble gjennomført. Et plotteark i exel er klargjort av testleder før man kommer til labben ved å fylle inn informasjon man vet om deltaker på forhånd. I labb forbereder testleder utstyr og maskiner på en standardisert måte hver test. Det første som gjøres i labben er at testleder tar på seg labfrakk som henger i labben, og sørger for at biosen(laktatmåler) er skrudd på og se om kalibreringen måler 12mmol/la. Ved "kalibrerings error" byttes standardveske. Vyntusen skal kalibreres av gasskalibrering og volum kalibrering mens gassbeholderen er åpen og trippel står i vyntus. Mens vyntuskalibreringene pågår setter testleder sammen munnstykke med neseklype og tar med slange til å puste gjennom som festes til miksekammer og sykkel. For å være klar til test må gasskalibreringen på vyntus være innenfor 2,0 diff og volumkalibreringen innenfor 0,2 diff. Deretter hentes utstyret for å måle laktat klart, og sykkelen kalibreres på lodeprogrammet etter at krankarmen er plassert rett opp. Man sjekker også at krankarmen er 172,5mm lang og riktig pedaltype for utøveren. Da er det klart for at utøver kommer i labben for å måle vekt og stille inn sykkelen for sin kropp. Deltakerprofil må lages om det ikke allerede eksisterer i både lodeprogram og vyntus. Deltakerprofil inneholder navn og id: "idr4000_h24_g3_id(x)", fødselsdato, kjønn, høyde og vekt. Sykkelen stilles slik deltakeren vil ha det samt at det ser bra ut ifølge testleder. Sykkelinstillingene lagres i lodeprogrammet. Så starter deltakeren en oppvarmingsprotokoll på 5min sykling med progressiv borg fra 10-13. Testleder setter på vifte mot deltakeren og informerer om at testen kommer til å foregå trappetrinsvis ved økning i watt per min (20w for damer og 25w for menn) og at målet skal være å sykle til det ikke går lenger, at det blir målinger hvert 30sek og at man skal sitte gjennom hele testen, og forklarer borg skala. Mens deltakeren varmer opp gjør testleder vyntusen klar til test ved å dobbeltsjekke pulsbeltettilkobling, at innstillingene står på 30sek målinger og medium munnstykke, gjennomføre zeroing, flytte trippel v til miksekammeret og skru igjen gassbeholderen. Oppvarming er ferdig og testen startes i vyntus. Testen starter for deltaker ved å starte VO2maks protokollen i lodeprogrammet samt en tidtakerklokke etter 1min er gått i vyntus. Gjennom testen informerer testleder om målinger og økninger samt motiverer når det blir tungt for deltaker. Testen stopper ved at deltaker gir seg eller RPM går under 60. Testleder noterer ned makspuls, sluttid, sluttwatt og borgskår ved endt test. Laktat tas i fingeren 1min etter endt test ved å tørke, stikke, tørke første bloddråpe og fylle laktatrør. Testleder passer på at deltaker har det bra. Laktat plottes i skjema. Deltakeren er da ferdig og testleder avslutter test i vyntus og lodeprogrammet som lagres. Vyntus filen lagres over på minnepenn før den lagres i onedrive på lab pc. Sykkelen, munnstykket, slangen og pulsbeltet vaskes. Vifta settes til å tørke fukt i miksekammeret. Plotteskjema fylles med verdier fra Vyntus og lagres. 
 
 ```{r}
 #| echo: false
@@ -141,7 +69,8 @@ library(ggplot2)
     labs(x = "deltaker",
          y = "VO2.max (ml/min)",
          title = "VO2.max per deltaker per test",
-         color = "test tidspunkt")
+         color = "test tidspunkt") +
+     scale_x_discrete(guide = guide_axis(n.dodge=3))
   
 
  
@@ -181,17 +110,21 @@ cv1 <- dat %>%
               values_from = vo2.max) %>%
   
   mutate(diff = t2 - t1) %>% 
-  summarise(m = mean(c(t1, t2), na.rm = TRUE), 
-            s = sd(diff, na.rm = TRUE),  
-            te = s / sqrt(2), 
-            cv = 100 * (te/m)) %>%
-  print()
+  summarise(mean = mean(c(t1, t2), na.rm = TRUE), 
+            sd = sd(diff, na.rm = TRUE),  
+            te = sd / sqrt(2), 
+            cv = 100 * (te/mean)) 
 
-cv_percent1 <- round(cv1$cv,2) %>%
-  print()
+
+cv1 %>% gt() %>%
+   fmt_number(decimals = 1) 
+
+cv_percent1 <- round(cv1$cv,2) 
 
 
 ```
+
+
 
 ## Beregning av standardfeil mellom test 3 og test 4
 
@@ -204,20 +137,21 @@ cv2 <- dat %>%
               values_from = vo2.max) %>%
   
   mutate(diff = t3 - t4) %>% 
-  summarise(m = mean(c(t1, t2), na.rm = TRUE), 
-            s = sd(diff, na.rm = TRUE),  
-            te = s / sqrt(2), 
-            cv = 100 * (te/m)) %>%
-  print()
+  summarise(mean = mean(c(t1, t2), na.rm = TRUE), 
+            sd = sd(diff, na.rm = TRUE),  
+            te = sd / sqrt(2), 
+            cv = 100 * (te/mean)) 
+  
+cv2 %>% gt() %>% 
+  fmt_number(decimals = 1) 
 
 
-cv_percent2 <- round(cv2$cv,1) %>%
-  print()
+cv_percent2 <- round(cv2$cv,1)
 
 ```
 
 ## Resultat
 
-Vi kalkulerte at variasjonskoeffisienten (CV) for test 1 og test 2 ble `r cv_percent1`%. I følge Dr. Will G. Hopkins indikerer en variasjonskoeffisient (CV) på under 5% god reliabilitet [@hopkins2000a]. Det vil si at resultatene for test 1 og test 2 har relativt lav variabilitet og bør betraktes som reliable. For test 3 og test 4 kalkulerte vi at variasjonskoeffisienten (CV) ble `r cv_percent2`%. Det vil si at også resultatene for test 3 og test 4 kan betraktes som reliable, men har mer variabilitet enn de tidligere testene da variasjonskoeffisienten er noe høyere.
+Vi kalkulerte at variasjonskoeffisienten (CV) for test 1 og test 2 ble `r cv_percent1`%. I følge Dr. Will G. Hopkins indikerer en variasjonskoeffisient (CV) på under 5% god reliabilitet [@hopkins2000a]. Det vil si at resultatene for test 1 og test 2 har relativt lav variabilitet og bør betraktes som reliable. For test 3 og test 4 kalkulerte vi at variasjonskoeffisienten (CV) ble `r cv_percent2`%. Det vil si at også resultatene for test 3 og test 4 kan betraktes som reliable, men har mer variabilitet enn resultatene fra test 1 og test 2 da variasjonskoeffisienten er noe høyere.
 
-## 
+
