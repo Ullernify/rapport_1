@@ -3,6 +3,7 @@ title: "Oppgave 1"
 format: html
 editor_options: 
   chunk_output_type: console
+bibliography: references.bib
 ---
 
 # Reliabilitet og verktøy for å reprodusere data
@@ -129,20 +130,26 @@ read_excel("g4.xlsx") %>%
 
 ```
 
-## Figur
+## Figur 1
 
 ```{r}
 #| echo: false
 #| warning: false
 
 library(ggplot2)
-  ggplot(data = dat, aes(x = id , y = vo2.max, color = timepoint)) + geom_point() + geom_smooth()
+  ggplot(data = dat, aes(x = id , y = vo2.max, color = timepoint)) + geom_point() + geom_smooth() +
+    labs(x = "deltaker",
+         y = "VO2.max (ml/min)",
+         title = "VO2.max per deltaker per test",
+         color = "test tidspunkt")
   
 
  
 ```
 
-## Tabell
+Figur 1 viser det absolutte maksimale oksygenopptaket til hver enkelt deltaker, sammenlignet med alle testene som ble gjennomført til alle deltakerne.
+
+## Tabell 1
 
 ```{r}
 #| echo: false
@@ -161,7 +168,9 @@ dat %>%
 
 ```
 
-## Calculate typical error between t1 and t2
+Tabell 1 viser det samme som "Figur 1", men her kan man lettere se hvor mange tester hver enkelt deltaker har gjennomført og hvilket resultat som hører til hvilken test.
+
+## Beregning av standardfeil mellom test 1 og test 2
 
 ```{r}
 #| echo: false
@@ -184,7 +193,7 @@ cv_percent1 <- round(cv1$cv,2) %>%
 
 ```
 
-## Calculate typical error between t3 and t4
+## Beregning av standardfeil mellom test 3 og test 4
 
 ```{r}
 #| echo: false
@@ -208,6 +217,7 @@ cv_percent2 <- round(cv2$cv,1) %>%
 ```
 
 ## Resultat
-Vi kalkulerte at variasjonskoeffisienten (CV) for test 1 og test 2 ble `r cv_percent1`. I følge Dr. Will G. Hopkins indikerer en variasjonskoeffisient på under 5% god reliabilitet. Det vil si at resultatene for test 1 og test 2 har relativt lav variabilitet og bør betraktes som reliable. For test 3 og test 4 kalkulerte vi at variasjonskoeffisienten (cv) ble `r cv_percent2`. Det vil si at også resultatene for test 3 og test 4 kan betraktes som reliable. Til 
 
-## Feilkilder og avvik 
+Vi kalkulerte at variasjonskoeffisienten (CV) for test 1 og test 2 ble `r cv_percent1`%. I følge Dr. Will G. Hopkins indikerer en variasjonskoeffisient (CV) på under 5% god reliabilitet [@hopkins2000a]. Det vil si at resultatene for test 1 og test 2 har relativt lav variabilitet og bør betraktes som reliable. For test 3 og test 4 kalkulerte vi at variasjonskoeffisienten (CV) ble `r cv_percent2`%. Det vil si at også resultatene for test 3 og test 4 kan betraktes som reliable, men har mer variabilitet enn de tidligere testene da variasjonskoeffisienten er noe høyere.
+
+## 
