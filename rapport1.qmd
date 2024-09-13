@@ -184,8 +184,6 @@ cv_percent1 <- round(cv1$cv,2) %>%
 
 ```
 
-
-
 ## Calculate typical error between t3 and t4
 
 ```{r}
@@ -208,3 +206,6 @@ cv_percent2 <- round(cv2$cv,1) %>%
   print()
 
 ```
+
+## Resultat
+Vi kalkulerte at variasjonskoeffisienten (cv) for test 1 og test 2 ble `r cv_percent1`. Det vil si at  
