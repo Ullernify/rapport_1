@@ -208,4 +208,6 @@ cv_percent2 <- round(cv2$cv,1) %>%
 ```
 
 ## Resultat
-Vi kalkulerte at variasjonskoeffisienten (cv) for test 1 og test 2 ble `r cv_percent1`. Det vil si at  
+Vi kalkulerte at variasjonskoeffisienten (CV) for test 1 og test 2 ble `r cv_percent1`. I følge Dr. Will G. Hopkins indikerer en variasjonskoeffisient på under 5% god reliabilitet. Det vil si at resultatene for test 1 og test 2 har relativt lav variabilitet og bør betraktes som reliable. For test 3 og test 4 kalkulerte vi at variasjonskoeffisienten (cv) ble `r cv_percent2`. Det vil si at også resultatene for test 3 og test 4 kan betraktes som reliable. Til 
+
+## Feilkilder og avvik 
